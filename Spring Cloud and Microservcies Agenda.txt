@@ -1,0 +1,85 @@
+
+Spring Cloud and Microservices Agenda
+
+
+1. Monolithic vs Microservices Architecture
+2. What are Microservices
+3. What is Spring Cloud
+4. Microservices with Spring Cloud
+5. Challenges with Microservices Architecture
+	Bounded Context
+	Configuration Management
+	Dynamic Scale up and Scale down
+	Fault Tolerant (Pack of Cards)
+	Visibity and Monitoring
+
+6. Spring Cloud Components and Solutions for Microservices Architecture
+	Configuration Management
+		Spring Cloud Config Server
+	
+	Dynamic Scale up and Scale down	
+		Netflix Feign (Easier REST Clients)
+		Netflix Ribbon (Client Side Load Balancing)
+		Netflix Naming Server (Eureka)
+		
+	Visibity and Monitoring
+		Netflix Zuul API Gateway
+		Netflix Zipkin Distributed Tracing
+
+	Fault Tolerance using Hystrix
+
+7. Advantages of Microservices Architectures
+	New Process and Technology adaption
+	Dynamic Scaling
+	Faster Release Cycles
+
+8. Spring Cloud Config Server
+	Centralized Configuration Management
+	Registering Configurations with Git Repo
+	Connectiong Spring Cloud Config Server to Local Git Repo
+	Registering Microservices with Spring Cloud Config Server
+	
+9. Spring Cloud Bus	
+	Updating configuaration Changes across the numerous instances of microservices
+	
+	
+9. Aggregating response across diff microservices by using the Spring RestTemplate
+
+10. Netflix Feign REST Client
+	Disadvantages of using RestTemplate(Boilerplate Code)
+	Advanatages of using Feign REST Client and proxy for Service Invocation
+	Implementing communication with other Microservices using Feign REST Client
+	
+11. Netflix Ribbon Load Balancing
+	Enabling Ribbon along with Feign REST Client
+	Implementing client side load balancing with Ribbon
+	Distributing load dynamically across multiple instances of microservices
+
+12. Netflix Eureka Naming Server
+	Registering microservices with Eureka Naming Server
+	Service Discovery with Eureka Naming Server
+	Monitoring the microservices  
+	Implementing Dynamic scaling using Eureka Naming Server and Ribbon
+		
+13. Importance of API Gateways and Distributed Tracing
+	Authentication, Authorization and Security
+	Service Rate Limits
+	Fault Tolerance
+	Service Aggregation
+	
+14. Netflix Zuul API Gateway	
+	Setting up Netflix Zuul API Gateway	
+	Implementing Zuul Logging Filter
+	Setting up Zuul API Gateway between microservice invocations
+	
+	
+15. Netflix Sleuth
+	Implementing Spring Cloud Sleuth
+	Assingning Unique ID to req and res across the microservices
+	Distributed Tracing across the microservices via Sleuth
+
+16. Netflix Zippkin
+	Implementing Zipkin Distributed Tracing Server
+	Using RabbitMQ for publishing and subscribing log messages b/w microservices and Zipkin Tracing Server
+	Using Zipkin UI for tracing and centralized monitoring of logs on chain of microservices via Sleuth and Zipkin
+	
