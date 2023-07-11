@@ -1,7 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>renovatebot/.github"],
-  "assignees": ["rarkins", "viceice"],
+  "extends": [
+    "github>renovatebot/.github"
+  ],
+  "assignees": [
+    "rarkins",
+    "viceice"
+  ],
   "semanticCommitScope": "deps",
   "automergeType": "pr",
   "prCreation": "immediate",
@@ -10,23 +15,33 @@
   },
   "packageRules": [
     {
-      "matchPackageNames": ["containerbase/node"],
+      "matchPackageNames": [
+        "containerbase/node"
+      ],
       "versioning": "node"
     },
     {
-      "matchDepTypes": ["dependencies"],
+      "matchDepTypes": [
+        "dependencies"
+      ],
       "semanticCommitType": "build"
     },
     {
-      "matchPackageNames": ["semantic-release"],
+      "matchPackageNames": [
+        "semantic-release"
+      ],
       "semanticCommitType": "build"
     },
     {
-      "matchPackageNames": ["@types/jest"],
+      "matchPackageNames": [
+        "@types/jest"
+      ],
       "groupName": "jest monorepo"
     },
     {
-      "matchPaths": ["**/__fixtures__/**"],
+      "matchFileNames": [
+        "**/__fixtures__/**"
+      ],
       "enabled": false
     }
   ]
